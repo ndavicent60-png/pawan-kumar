@@ -39,7 +39,7 @@
       min-height: 100vh;
     }
 
-    /* Left column (sidebar) */
+    /* LEFT SIDEBAR */
     .sidebar {
       background: var(--primary);
       color: white;
@@ -92,20 +92,15 @@
       margin: 3px 4px 0 0;
     }
 
-    .sidebar hr {
+    hr {
       border: none;
       border-top: 1px solid rgba(148, 163, 184, 0.4);
       margin: 4px 0 10px;
     }
 
-    /* Right column (content) */
     .content {
       padding: 32px 40px 40px;
       background: white;
-    }
-
-    .about {
-      margin-bottom: 26px;
     }
 
     .about p {
@@ -144,7 +139,6 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 10px;
     }
 
     .job-title {
@@ -164,7 +158,7 @@
 
     .job ul {
       margin-top: 6px;
-      padding-left: 18px;
+      padding-left: 20px;
       font-size: 14px;
       color: var(--text-muted);
       line-height: 1.5;
@@ -197,6 +191,7 @@
       font-size: 14px;
       color: var(--text-muted);
       margin-top: 2px;
+      line-height: 1.5;
     }
 
     .footer {
@@ -243,78 +238,67 @@
       .page {
         grid-template-columns: 1fr;
       }
-      .sidebar {
-        flex-direction: column;
-      }
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-      .content {
-        padding: 24px 18px 24px;
-      }
     }
   </style>
 </head>
 <body>
+
   <div class="page">
-    <!-- LEFT COLUMN -->
+
+    <!-- LEFT SIDE -->
     <aside class="sidebar">
+
+      <!-- PROFILE PHOTO HERE -->
+      <div style="text-align:center; margin-bottom:20px;">
+        <img src="pawan-profile.jpg"
+             alt="Pawan Kumar"
+             style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #ffffff;">
+      </div>
+
       <div>
         <div class="name">Pawan Kumar</div>
         <div class="role">Site Engineer &amp; Data Analyst</div>
 
         <div class="btn-row" style="margin-top:14px;">
-          <!-- Change resume file name after uploading your PDF -->
           <a href="Pawan_Kumar_Resume.pdf" class="btn primary" target="_blank">Download Resume</a>
         </div>
       </div>
 
       <div>
         <div class="section-title">Contact</div>
-        <div class="contact-item">
-          <span>Phone</span>
-          +91 90538 30892
-        </div>
+        <div class="contact-item"><span>Phone</span> +91 90538 30892</div>
         <div class="contact-item">
           <span>Email</span>
           <a href="mailto:pawanhanda930055@gmail.com" style="color:#e5e7eb;text-decoration:none;">
             pawanhanda930055@gmail.com
           </a>
         </div>
-        <div class="contact-item">
-          <span>Location</span>
-          10 Westgate, Pontoon Beach
-        </div>
+        <div class="contact-item"><span>Location</span> 10 Westgate, Pontoon Beach</div>
       </div>
 
       <div>
         <div class="section-title">Skills</div>
-        <div>
-          <span class="pill">AutoCAD 2D &amp; 3D</span>
-          <span class="pill">Revit</span>
-          <span class="pill">GIS Tools</span>
-          <span class="pill">Data Analysis</span>
-          <span class="pill">Technical Reporting</span>
-          <span class="pill">Construction Supervision</span>
-          <span class="pill">Quality Assurance</span>
-        </div>
+        <span class="pill">AutoCAD 2D & 3D</span>
+        <span class="pill">Revit</span>
+        <span class="pill">GIS Tools</span>
+        <span class="pill">Data Analysis</span>
+        <span class="pill">Technical Reporting</span>
+        <span class="pill">Construction Supervision</span>
+        <span class="pill">Quality Assurance</span>
       </div>
 
       <div>
         <div class="section-title">Languages</div>
-        <div>
-          <span class="pill">Punjabi</span>
-          <span class="pill">English</span>
-          <span class="pill">Hindi</span>
-        </div>
+        <span class="pill">Punjabi</span>
+        <span class="pill">English</span>
+        <span class="pill">Hindi</span>
       </div>
+
     </aside>
 
-    <!-- RIGHT COLUMN -->
+    <!-- RIGHT SIDE -->
     <main class="content">
+
       <section class="about">
         <h2 style="font-size:18px;margin-bottom:6px;">Profile</h2>
         <p>
@@ -337,10 +321,10 @@
             <div class="job-date">2023 – 2024</div>
           </div>
           <ul>
-            <li>Managed day-to-day operations on construction sites and monitored technical processes.</li>
-            <li>Ensured compliance with safety protocols and site regulations.</li>
-            <li>Prepared technical reports, quantity estimates and construction schedules.</li>
-            <li>Supervised quality assurance tasks and coordinated with multidisciplinary teams.</li>
+            <li>Managed day-to-day operations on construction sites.</li>
+            <li>Ensured compliance with safety protocols.</li>
+            <li>Prepared reports, technical documentation and schedules.</li>
+            <li>Supervised QA tasks and coordinated across teams.</li>
           </ul>
         </div>
       </section>
@@ -350,18 +334,52 @@
 
         <div class="project">
           <div class="project-title">Rain Water Harvesting – G.P.D. Fatehabad</div>
-          <p>
-            Collaborated with a team to design and implement a rainwater harvesting system for water
-            conservation. Conducted rainfall analysis and storage capacity estimation, and assisted in
-            developing filtration systems to improve water quality and usability.
-          </p>
+          <p>Designed and implemented a rainwater harvesting system including analysis, storage and filtration.</p>
         </div>
 
         <div class="project">
           <div class="project-title">Urban Corridor Noise Pollution Study</div>
-          <p>
-            Collected and analyzed noise pollution data in urban corridors using sound level meters and
-            GIS tools. Mapped noise distribution, evaluated the impact of traffic and infrastructure, and
-            proposed mitigation strategies for high-impact zones.
-          </p>
+          <p>Collected and analyzed noise data using GIS tools; proposed mitigation strategies.</p>
         </div>
+
+        <div class="project">
+          <div class="project-title">Summer Training – P.W.D Fatehabad</div>
+          <p>Practical experience in government building and infrastructure construction.</p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Education</h2>
+
+        <div class="edu-item">
+          <div class="edu-title">Master’s in Engineering Management</div>
+          <div class="edu-meta">Cumberland University · 2025</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-title">Bachelor of Technology (B.Tech)</div>
+          <div class="edu-meta">Choudhary Devi Lal University · 2022–2024</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-title">Diploma in Civil Engineering</div>
+          <div class="edu-meta">HSBTE · 2021–2022</div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Contact & Links</h2>
+
+        <div class="btn-row">
+          <a href="mailto:pawanhanda930055@gmail.com" class="btn primary">Email Me</a>
+          <a href="https://github.com/ndavicent60-png" class="btn" target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <div class="footer">© 2025 Pawan Kumar · Portfolio hosted on GitHub Pages</div>
+
+    </main>
+  </div>
+
+</body>
+</html>
